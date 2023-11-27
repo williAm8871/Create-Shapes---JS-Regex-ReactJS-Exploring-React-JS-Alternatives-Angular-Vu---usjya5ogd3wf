@@ -5,7 +5,7 @@ const App = () => {
   const [shap, setShape] = useState([]);
   function handleclick() {
     setShape((prev) => {
-      return [...prev, Value];
+      return [...prev, setValue];
     })
   }
   return (
@@ -16,8 +16,6 @@ const App = () => {
           <option value="circle">Circle</option>
         </select>
         <button onClick={handleclick}>Add Shape</button>
-
-
       </div>
       <div id="shapes-holder">
         {
